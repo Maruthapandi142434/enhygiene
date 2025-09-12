@@ -1,128 +1,79 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Award, Users, Clock, Shield } from "lucide-react"
+import Image from "next/image"
 import Layout from "@/components/layout"
 
 export default function AboutPage() {
   return (
     <Layout>
-
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-teal-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">About Enhygiene</h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Leading environmental health and safety consulting firm dedicated to protecting workplaces and communities
-              through expert industrial hygiene services.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
+      {/* About Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At Enhygiene, we are committed to creating safer, healthier work environments through comprehensive
-                industrial hygiene and environmental health services. Our certified professionals bring decades of
-                experience in identifying, evaluating, and controlling occupational and environmental health hazards.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                We believe that every worker deserves a safe and healthy workplace, and every organization deserves
-                expert guidance in maintaining regulatory compliance while protecting their most valuable asset - their
-                people.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="p-6 text-center">
-                <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">Certified Experts</h3>
-                <p className="text-sm text-gray-600">CIH and CSP certified professionals</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Users className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">500+ Clients</h3>
-                <p className="text-sm text-gray-600">Trusted by organizations nationwide</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Clock className="w-12 h-12 text-purple-600 mx-auto mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">15+ Years</h3>
-                <p className="text-sm text-gray-600">Experience in industrial hygiene</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Shield className="w-12 h-12 text-teal-600 mx-auto mb-4" />
-                <h3 className="font-bold text-gray-900 mb-2">100% Compliant</h3>
-                <p className="text-sm text-gray-600">Regulatory compliance guarantee</p>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              The principles that guide our work and define our commitment to excellence in environmental health and
-              safety.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-8 text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Safety First</h3>
-              <p className="text-gray-600">
-                We prioritize the health and safety of workers above all else, ensuring comprehensive protection through
-                rigorous assessment and control measures.
-              </p>
-            </Card>
-
-            <Card className="p-8 text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
-              <p className="text-gray-600">
-                We maintain the highest standards of professional excellence through continuous education,
-                certification, and adherence to industry best practices.
-              </p>
-            </Card>
-
-            <Card className="p-8 text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Partnership</h3>
-              <p className="text-gray-600">
-                We work collaboratively with our clients as trusted partners, providing tailored solutions that meet
-                their unique needs and challenges.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Work Together?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let our certified professionals help you create a safer, healthier workplace for your team.
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-10 pb-2 text-center md:text-left">
+            About EnHygiene
+          </h2>
+          <hr />
+          <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed pt-4">
+            We are professionals trained to identify and mitigate workplace hazards that can lead
+            to health issues. Our goal is to create a safe, healthy, and productive workplaces to
+            protect employees by applying scientific principles and methodologies to assess
+            workplace environments, ensuring compliance with health regulations and industry
+            standards.
           </p>
-          <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg font-medium rounded-md">
-            CALL OR TEXT (612) 296-2458
-          </Button>
+
+          <p className="text-lg md:text-2xl text-gray-700 mb-6 leading-relaxed">
+            <strong>Rajkumar Jayabalan</strong>, EnHygiene’s Principal Consultant, has over{" "}
+            <strong>25 years of experience</strong> in Environmental Health and Industrial Hygiene.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-start">
+            {/* Left Side - Content */}
+            <div className="flex flex-col justify-center order-2 md:order-1">
+              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed">
+                Raj is a <strong>Certified Industrial Hygienist (CIH)</strong> and holds a Masters
+                of Science in Industrial Hygiene and Safety. Over his career, he has successfully
+                led projects across diverse industries, ensuring compliance with health regulations
+                and fostering safe, sustainable workplace practices.
+              </p>
+
+              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed">
+                Recognized as a <strong>Subject Matter Expert (SME)</strong> in Industrial Hygiene
+                Services, Raj specializes in occupational exposure assessment, risk management,
+                workplace monitoring, and the development of tailored health and safety programs.
+              </p>
+
+              <ul className="text-base md:text-xl list-none space-y-3 text-gray-700">
+                <li>
+                  ➜ Assisting companies in developing new products and processes that emphasize{" "}
+                  <strong>environmental sustainability</strong> and <strong>occupational health</strong>.
+                </li>
+                <li>➜ Investigating <strong>indoor environmental quality concerns</strong>.</li>
+                <li>
+                  ➜ Evaluating chemical and physical agents to determine potential
+                  <strong> health risks</strong>.
+                </li>
+                <li>➜ Implementing <strong>prevention strategies</strong> for long-term workplace safety.</li>
+              </ul>
+
+              <p className="text-base md:text-xl text-gray-600 mt-6 leading-relaxed">
+                At EnHygiene, Raj continues to drive excellence in Industrial Hygiene Services,
+                mentoring teams, advising organizations, and advancing best practices in
+                occupational health and environmental stewardship.
+              </p>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="flex justify-center md:justify-end p-7 order-1 md:order-2">
+              <div className="relative w-full max-w-2xl aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src="/about.jpeg"
+                  alt="Rajkumar Jayabalan - Principal Consultant"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>

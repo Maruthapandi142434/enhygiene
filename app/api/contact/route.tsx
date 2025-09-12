@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
-
+import nodemailer from "nodemailer"   // <-- import nodemailer
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -21,22 +21,26 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     })
 
-    // TODO: Implement SMTP email sending here
+ 
     // Example with nodemailer:
-    /*
-    const transporter = nodemailer.createTransporter({
-      host: process.env.SMTP_HOST,
-      port: process.env.SMTP_PORT,
-      secure: true,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    })
+    
+    const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT),
+  secure: true,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false, // ⚠️ disables cert validation
+  },
+})
+
 
     await transporter.sendMail({
       from: process.env.SMTP_FROM,
-      to: 'caleb@Enhygieneconsulting.com',
+      to: 'jrfsd1@sixthstar.in', // Replace with your receiving email
       subject: `New Consultation Request from ${businessName}`,
       html: `
         <h2>New Consultation Request</h2>
@@ -47,7 +51,7 @@ export async function POST(request: NextRequest) {
         <p><strong>Notes:</strong> ${notes}</p>
       `,
     })
-    */
+  
 
     return NextResponse.json({ message: "Form submitted successfully" }, { status: 200 })
   } catch (error) {

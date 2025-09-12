@@ -46,33 +46,33 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-white"
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-[#0260a8] ${
+        isScrolled ? "bg-[#0260a8] backdrop-blur-sm shadow-sm" : "bg-[#0260a8]"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 bg-[#0260a8]">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative ">
               <Image
-                src="/enhygiene-logo.jpg"
+                src="/final--enhygine--logo.png"
                 alt="Enhygiene Logo"
-                width={100}
+                width={200}
                 height={100}
                 className="object-contain"
                 priority
               />
             </div>
             {/* <div>
-              <div className="text-2xl font-bold text-gray-900">Enhygiene</div>
-              <div className="text-xs text-gray-600 uppercase tracking-wider">Environmental Health & Safety</div>
+              <div className="text-2xl font-bold text-white">Enhygiene</div>
+              <div className="text-xs text-white uppercase tracking-wider">Environmental Health & Safety</div>
             </div> */}
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <button className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              <button className="flex items-center space-x-1 text-white hover:text-white font-medium transition-colors">
                 <span>Services</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
@@ -80,7 +80,7 @@ export default function Header() {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 transition-all duration-200 ${
+                className={`absolute top-full left-0 mt-2 w-64 bg-blue rounded-lg shadow-xl border border-gray-200 py-2 z-50 transition-all duration-200 ${
                   isServicesOpen
                     ? "opacity-100 visible transform translate-y-0"
                     : "opacity-0 invisible transform -translate-y-2"
@@ -90,7 +90,7 @@ export default function Header() {
                   <Link
                     key={index}
                     href={item.href}
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors duration-150 border-b border-gray-100 last:border-b-0"
+                    className="block px-4 py-3 text-sm bg-[#0260a8] text-white hover:bg-gray-50 hover:text-[#0260a8] transition-colors duration-150 border-b border-gray-100 last:border-b-0"
                   >
                     {item.name}
                   </Link>
@@ -98,7 +98,7 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+            <Link href="/about" className="text-white hover:text-white font-medium transition-colors">
               About
             </Link>
 
@@ -122,7 +122,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full text-left text-gray-700 hover:text-gray-900 font-medium"
+                  className="flex items-center justify-between w-full text-left text-white hover:text-white font-medium"
                 >
                   <span>Services</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
@@ -133,7 +133,7 @@ export default function Header() {
                       <Link
                         key={index}
                         href={item.href}
-                        className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-sm text-white hover:text-white transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
@@ -142,7 +142,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <Link href="/about" className="text-left text-gray-700 hover:text-gray-900 font-medium">
+              <Link href="/about" className="text-left text-white hover:text-white font-medium">
                 About
               </Link>
               <Link href="/contact">
