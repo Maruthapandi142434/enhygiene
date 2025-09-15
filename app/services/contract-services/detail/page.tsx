@@ -25,8 +25,7 @@ export default function ContractServicesDetail() {
             </h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene's certified industrial hygienist (CIH) will work side-by-side with clients in their place of
-              business to <strong>ensure compliance</strong> on every level.
+              EnHygiene’s Industrial Hygienist will work with clients in their location as part of long or short term contracts to assist contractors and companies ensure compliance by providing risk management through proactive hazard control recommendations.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -34,18 +33,21 @@ export default function ContractServicesDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Custom analysis and measurement of environmental hazards</span>
+                <span className="text-gray-700">Development of policies and procedures</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
                 <span className="text-gray-700">
-                  Development of policies and procedures to measure and reduce employee exposure to physical,
-                  chemical, biological, and ergonomic stress factors
+                  Exposure assessment
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Conduct regular audits of programs</span>
+                <span className="text-gray-700">Audit and Inspection</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Trainings.</span>
               </li>
             </ul>
 

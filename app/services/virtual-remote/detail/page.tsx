@@ -21,13 +21,10 @@ export default function VirtualRemoteDetail() {
 
           {/* Right side - Content */}
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">Virtual & Remote Services</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">NORM/NIR Services</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene provides remote services to assist you, on either a scheduled and/or as-needed basis. Our
-              virtual health and safety services are always conducted by a{" "}
-              <strong>certified industrial hygienist (CIH) and certified safety professional (CSP)</strong> without the
-              need for a site visit.
+             Naturally Occurring Radioactive Materials (NORM) usually consists of industrial wastes or by-products enriched with radioactive elements that exist in the natural environment. This includes uranium, thorium, potassium, radium and radon.  EnHygiene’s Radiation Safety Professionals will help companies to identify potential hazards related to ionizing and non-ionizing radiation, develop suitable control methods to ensure worker protection.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -35,19 +32,19 @@ export default function VirtualRemoteDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Employee Exposure Monitoring</span>
+                <span className="text-gray-700">NORM Survey</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Indoor Air Quality (IAQ) Evaluations & Testing</span>
+                <span className="text-gray-700">NORM Management Program</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">PPE Assessments</span>
+                <span className="text-gray-700">Training</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Job Hazard Analysis (JHA)</span>
+                <span className="text-gray-700">Non-ionizing radiation hazards(NIR)</span>
               </li>
             </ul>
 

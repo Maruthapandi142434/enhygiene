@@ -20,11 +20,10 @@ export default function IndoorAirQualityDetail() {
 
           {/* Right side - Content */}
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">Indoor Air Quality (IAQ) Testing</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">2.Indoor Environment Quality (IEQ) Monitoring</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene's IAQ professionals will help your organization identify indoor environmental contaminants and
-              their sources, resolve building-related health issues, and <strong>prevent future occurrences</strong>.
+             EnHygiene’s IEQ Specialists will help you to evaluate the following conditions inside a building that affect the health, comfort, and well-being of its occupants to solve building related issues. This will prevent sick building syndrome and improves occupational health, productivity, and comfort by ensuring a safe and pleasant indoor environment.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -32,19 +31,31 @@ export default function IndoorAirQualityDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Building evaluations</span>
+                <span className="text-gray-700">Hazardous Chemical Compounds</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">USGBC LEED indoor air quality testing</span>
+                <span className="text-gray-700">Occupational Parameters</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Mold and water intrusion investigations</span>
+                <span className="text-gray-700">Dust Parameters</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Volatile organic compounds (VOCs) testing and analysis</span>
+                <span className="text-gray-700">Microbiological</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Sound</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Moisture Content</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Illumination / Lighting </span>
               </li>
             </ul>
 

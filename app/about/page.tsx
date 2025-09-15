@@ -64,14 +64,16 @@ export default function AboutPage() {
 
             {/* Right Side - Image */}
             <div className="flex justify-center md:justify-end p-7 order-1 md:order-2">
-              <div className="relative w-full max-w-2xl aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
-                <Image
-                  src="/about.jpeg"
-                  alt="Rajkumar Jayabalan - Principal Consultant"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <div className="relative w-full max-w-2xl h-[600px] rounded-2xl overflow-hidden shadow-xl">
+  <Image
+    src="/about.jpeg"
+    alt="Rajkumar Jayabalan - Principal Consultant"
+    fill
+    className="object-cover"
+  />
+</div>
+
+
             </div>
           </div>
         </div>

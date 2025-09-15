@@ -20,12 +20,10 @@ export default function ComplianceAssistanceDetail() {
 
           {/* Right side - Content */}
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">Compliance Assistance & EHS</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">Compliance Assistance & Control Strategy Development</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene's compliance assistance & EHS professionals will help your organization target work practices
-              and controls to <strong>reduce accidents, injuries, and productivity losses</strong>, and determine where
-              additional resources should be applied.
+             EnHygiene’s compliance assistance professionals will assist your organization to develop customized mitigation strategies and complying with related local regulations, as well as relevant international standards, facilitating audit readiness and minimizing legal risks.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -33,11 +31,11 @@ export default function ComplianceAssistanceDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">COVID-19 safety and control plans</span>
+                <span className="text-gray-700">Compliance register</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Job safety analysis (JSA)</span>
+                <span className="text-gray-700">Hearing conservation program</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
@@ -45,7 +43,15 @@ export default function ComplianceAssistanceDetail() {
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Hearing conservation program</span>
+                <span className="text-gray-700">Chemical management program</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">IAQ Management program</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Other required programs.</span>
               </li>
             </ul>
 

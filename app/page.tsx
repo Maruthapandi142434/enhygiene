@@ -23,37 +23,43 @@ export default function EnhygienePage() {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('/health-safety-environment-moss-background.jpeg')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black/30"></div>
-        </div>
+     {/* Hero Section */}
+<section className="flex items-center relative overflow-hidden px-4 md:px-12 py-12 sm:py-20">
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div
-            ref={heroRef}
-            className={`max-w-2xl text-white transition-all duration-1000 transform ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-            }`}
-          >
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Environmental Health &<br />
-              Safety Solutions
-            </h1>
-            <p className="text-xl mb-8 leading-relaxed">
-              Specializing in identifying, evaluating, and controlling occupational and environmental health hazards.
-            </p>
-            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 text-lg font-medium rounded-md transform hover:scale-105 transition-all duration-300">
-              CALL OR TEXT (612) 296-2458
-            </Button>
-          </div>
-        </div>
-      </section>
+  <div
+    className="relative w-full rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: `url('/health-safety-environment-moss-background.jpeg')`,
+    }}
+  >
+    <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
+
+    <div className="relative z-10 p-8 md:p-16">
+      <div
+        ref={heroRef}
+        className={`max-w-2xl text-white transition-all duration-1000 transform ${
+          heroVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-12"
+        }`}
+      >
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+          Environmental &<br />
+          Industrial Hygiene Solutions
+        </h1>
+        <p className="text-lg sm:text-xl mb-8 leading-relaxed">
+          Creating a safe, healthy, and productive workplace to protect employees
+          by identifying, recognizing, evaluating, and controlling workplace
+          hazards.
+        </p>
+        <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
+          CALL OR TEXT (612) 296-2458
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section className="py-20 bg-white">
@@ -64,7 +70,7 @@ export default function EnhygienePage() {
               sectionTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Industrial Hygiene & Safety Services</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Environmental and Industrial Hygiene Services</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
@@ -87,29 +93,36 @@ export default function EnhygienePage() {
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene's certified industrial hygienist (CIH) will help your organization identify, evaluate, and
-                    control occupational health hazards to protect and enhance the health and safety of your employees.
+                    EnHygiene’s Certified Industrial hygienists(CIH) will help you to identify and mitigate workplace hazards that can lead to health issues by  applying scientific principles and methodologies to assess workplace environments, ensuring compliance with health regulations and industry standards. Their expertise ranges across various fields, including chemical exposure, noise control, ergonomic assessments, and indoor air quality.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                      COVID-19 cleaning verification surface testing
+                      Health Risk Assessment (HRA)
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                      Employee exposure monitoring
+                      Employee Exposure monitoring
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                      Air sampling and analysis
+                      Air Contaminant Monitoring
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                      Noise dosimetry and surveys
+                      Noise and Vibration Assessment
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-                      Respirator fit testing
+                      Heat stress Assessment
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                      Ergonomic Assessments
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                      Respiratory Fit Testing
                     </li>
                   </ul>
                 </CardContent>
@@ -129,31 +142,42 @@ export default function EnhygienePage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">Indoor Air Quality (IAQ) Testing</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Indoor Environment Quality (IEQ) Monitoring</h3>
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene's IAQ professionals will help your organization identify indoor environmental contaminants
-                    and their sources, resolve building-related health issues, and prevent future occurrences.
+                    EnHygiene’s IEQ Specialists will help you to evaluate the following conditions inside a building that affect the health, comfort, and well-being of its occupants to solve building related issues. This will prevent sick building syndrome and improves occupational health, productivity, and comfort by ensuring a safe and pleasant indoor environment.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Building evaluations
+                      Hazardous Chemical Compounds
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      USGBC LEED indoor air quality testing
+                      Occupational Parameters
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Mold and water intrusion investigations
+                      Dust Parameters
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                      Volatile organic compounds (VOCs) testing and analysis
+                      Microbiological
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                      Sound
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                      Moisture Content
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                     Illumination / Lighting 
                     </li>
                   </ul>
                 </CardContent>
@@ -173,32 +197,30 @@ export default function EnhygienePage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">Virtual & Remote Services</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">NORM/NIR Services</h3>
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene provides remote services to assist you, on either a scheduled and/or as-needed basis. Our
-                    virtual health and safety services are always conducted by a certified industrial hygienist (CIH)
-                    and certified safety professional (CSP) without the need for a site visit.
+                   Naturally Occurring Radioactive Materials (NORM) usually consists of industrial wastes or by-products enriched with radioactive elements that exist in the natural environment. This includes uranium, thorium, potassium, radium and radon.  EnHygiene’s Radiation Safety Professionals will help companies to identify potential hazards related to ionizing and non-ionizing radiation, develop suitable control methods to ensure worker protection.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                      Employee Exposure Monitoring
+                      NORM Survey
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                      Indoor Air Quality (IAQ) Evaluations & Testing
+                     NORM Management Program 
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                      PPE Assessments
+                     Training
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                      Job Hazard Analysis (JHA)
+                     Non-ionizing radiation hazards(NIR)
                     </li>
                   </ul>
                 </CardContent>
@@ -217,24 +239,22 @@ export default function EnhygienePage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">Compliance Assistance & EHS</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Compliance Assistance & Control Strategy Development</h3>
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene's compliance assistance & EHS professionals will help your organization target work
-                    practices and controls to reduce accidents, injuries, and productivity losses, and determine where
-                    additional resources should be applied.
+                   EnHygiene’s compliance assistance professionals will assist your organization to develop customized mitigation strategies and complying with related local regulations, as well as relevant international standards, facilitating audit readiness and minimizing legal risks.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                      COVID-19 safety and control plans
+                      Compliance register
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                      Job safety analysis (JSA)
+                     Hearing conservation program
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
@@ -242,7 +262,15 @@ export default function EnhygienePage() {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                      Hearing conservation program
+                      Chemical management program
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                      IAQ Management program
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                     Other required programs.
                     </li>
                   </ul>
                 </CardContent>
@@ -261,27 +289,30 @@ export default function EnhygienePage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">Health & Safety Contract Services</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Industrial Hygiene Contract Services</h3>
                     </div>
                   </div>
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene's certified industrial hygienist (CIH) and certified safety professional (CSP) will work
-                    side-by-side with clients in their place of business to ensure compliance on every level.
+                   EnHygiene’s Industrial Hygienist will work with clients in their location as part of long or short term contracts to assist contractors and companies ensure compliance by providing risk management through proactive hazard control recommendations.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
-                      Custom analysis and measurement of environmental hazards
+                      Development of policies and procedures
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
-                      Development of policies and procedures to reduce workplace hazards
+                      Exposure assessment
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
-                      Auditing programs
+                      Audit and Inspection
+                    </li>
+                     <li className="flex items-center">
+                      <span className="w-2 h-2 bg-teal-500 rounded-full mr-3"></span>
+                     Trainings.
                     </li>
                   </ul>
                 </CardContent>
@@ -306,22 +337,24 @@ export default function EnhygienePage() {
                 </div>
                 <CardContent className="p-6 flex-grow flex flex-col">
                   <p className="text-gray-600 mb-4">
-                    Enhygiene's environmental monitoring professionals will help your organization ensure that potential
-                    worksite pollutants do not exceed environmental quality standards and that established worksite
-                    controls are being applied and are effective.
+                    EnHygiene’s environmental professionals provide expert measurement, reporting, and compliance assurance that help your company control pollution, adhere to legal standards, protect employees and the community, and build trust with stakeholders.
                   </p>
                   <ul className="space-y-2 text-sm flex-grow">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
-                      Air quality assessments (e.g., ozone, NOx emissions, PM10)
+                     Water and waste water sampling
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
-                      Community noise assessments
+                      Ambient noise assessment
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
-                      Soil and water sampling
+                     Ambient air quality assessments(Volatile Organic Compounds, NOx emissions, and particulate matter (PM10, PM2.5)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
+                    Soil sampling
                     </li>
                   </ul>
                 </CardContent>

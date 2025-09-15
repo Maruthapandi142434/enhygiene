@@ -23,9 +23,7 @@ export default function EnvironmentalMonitoringDetail() {
             <h1 className="text-4xl font-bold text-gray-900 mb-6">Environmental Monitoring</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene's environmental monitoring professionals will help your organization ensure that potential
-              worksite pollutants do not exceed environmental quality standards and that{" "}
-              <strong>established worksite controls are being applied and are effective</strong>.
+             EnHygiene’s environmental professionals provide expert measurement, reporting, and compliance assurance that help your company control pollution, adhere to legal standards, protect employees and the community, and build trust with stakeholders.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -33,15 +31,19 @@ export default function EnvironmentalMonitoringDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Air quality assessments (e.g., ozone, NOx emissions, PM10)</span>
+                <span className="text-gray-700">Water and waste water sampling</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Community noise assessments</span>
+                <span className="text-gray-700">Ambient noise assessment</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Soil and water sampling</span>
+                <span className="text-gray-700">Ambient air quality assessments(Volatile Organic Compounds, NOx emissions, and particulate matter (PM10, PM2.5))</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Soil sampling</span>
               </li>
             </ul>
 

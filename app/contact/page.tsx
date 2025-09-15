@@ -113,7 +113,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900">Email</p>
-                        <p className="text-gray-600">caleb@Enhygieneconsulting.com</p>
+                        <p className="text-gray-600">raj@enhygiene.com</p>
                       </div>
                     </div>
 
@@ -134,7 +134,7 @@ export default function ContactPage() {
                       Call or text: <strong>(612) 296-2458</strong>
                     </p>
                     <p className="text-teal-700">
-                      Or send an email to: <strong>caleb@Enhygieneconsulting.com</strong>
+                      Or send an email to: <strong>raj@enhygiene.com</strong>
                     </p>
                   </div>
                 </div>

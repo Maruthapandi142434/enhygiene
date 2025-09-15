@@ -125,7 +125,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2" style={{ color: "#e5e7eb" }}>
               <li>(612) 296-2458</li>
-              <li>caleb@Enhygieneconsulting.com</li>
+              <li>raj@enhygiene.com</li>
               <li>Minneapolis, MN</li>
             </ul>
             <div className="mt-4">

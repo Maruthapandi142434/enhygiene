@@ -23,9 +23,7 @@ export default function IndustrialHygieneDetail() {
             <h1 className="text-4xl font-bold text-gray-900 mb-6">Industrial Hygiene Services</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Enhygiene's certified industrial hygienist (CIH) will help your organization identify, evaluate, and
-              control occupational health hazards to{" "}
-              <strong>protect and enhance the health and safety of your employees</strong>.
+              EnHygiene’s Certified Industrial hygienists(CIH) will help you to identify and mitigate workplace hazards that can lead to health issues by  applying scientific principles and methodologies to assess workplace environments, ensuring compliance with health regulations and industry standards. Their expertise ranges across various fields, including chemical exposure, noise control, ergonomic assessments, and indoor air quality.
             </p>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Services offered include:</h2>
@@ -33,23 +31,31 @@ export default function IndustrialHygieneDetail() {
             <ul className="space-y-4 mb-8">
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">COVID-19 cleaning verification surface testing</span>
+                <span className="text-gray-700">Health Risk Assessment (HRA)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Employee exposure monitoring</span>
+                <span className="text-gray-700">Employee Exposure Monitoring</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Air sampling and analysis</span>
+                <span className="text-gray-700">Air Contaminant Monitoring</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Noise dosimetry and surveys</span>
+                <span className="text-gray-700">Noise and Vibration Assessment</span>
               </li>
               <li className="flex items-start">
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Respirator fit testing</span>
+                <span className="text-gray-700">Heat stress Assessment</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Ergonomic Assessments</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-cyan-500 mr-3 mt-1">→</span>
+                <span className="text-gray-700">Respiratory Fit Testing</span>
               </li>
             </ul>
 
