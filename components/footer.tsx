@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -7,19 +8,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{
-                  backgroundColor: "#0d9488",
-                  color: "#ffffff",
-                }}
-              >
-                <div className="font-bold text-sm">E</div>
+              <div className="relative">
+                <Image
+                  src="/final--enhygine--logo.png"
+                  alt="Enhygiene Logo"
+                  width={160}
+                  height={80}
+                  className="object-contain"
+                  priority
+                />
               </div>
-              <div>
-                <div className="text-xl font-bold">Enhygiene</div>
-                <div className="text-xs text-gray-400 uppercase tracking-wider">Environmental Health & Safety</div>
-              </div>
+             
             </Link>
             <p className="text-gray-400 leading-relaxed">
               Environmental Health & Safety Solutions specializing in occupational and environmental health hazards.
@@ -44,16 +43,34 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                   style={{ color: "#e5e7eb" }}
                 >
-                  Indoor Air Quality Testing
+                  Indoor Environment Quality (IEQ) Monitoring
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/services/virtual-remote"
+                  href="/services/radiation-surveys"
                   className="hover:text-white transition-colors"
                   style={{ color: "#e5e7eb" }}
                 >
-                  Virtual & Remote Services
+                  NORM Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/compliance-assistance"
+                  className="hover:text-white transition-colors"
+                  style={{ color: "#e5e7eb" }}
+                >
+                  Compliance Assistance & Control Strategy Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/contract-services"
+                  className="hover:text-white transition-colors"
+                  style={{ color: "#e5e7eb" }}
+                >
+                  Industrial Hygiene Contract Services
                 </Link>
               </li>
               <li>
@@ -65,33 +82,7 @@ export default function Footer() {
                   Environmental Monitoring
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/services/contract-services"
-                  className="hover:text-white transition-colors"
-                  style={{ color: "#e5e7eb" }}
-                >
-                  Contract Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/compliance-assistance"
-                  className="hover:text-white transition-colors"
-                  style={{ color: "#e5e7eb" }}
-                >
-                  Compliance Assistance & EHS
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/radiation-surveys"
-                  className="hover:text-white transition-colors"
-                  style={{ color: "#e5e7eb" }}
-                >
-                  Radiation Surveys & Assessments
-                </Link>
-              </li>
+              
             </ul>
           </div>
 

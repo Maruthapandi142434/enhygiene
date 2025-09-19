@@ -35,13 +35,12 @@ export default function Header() {
   }
 
   const serviceItems = [
-    { name: "Virtual & Remote Services", href: "/services/virtual-remote" },
     { name: "Industrial Hygiene Services", href: "/services/industrial-hygiene" },
-    { name: "Indoor Air Quality (IAQ)", href: "/services/indoor-air-quality" },
-    { name: "Contract Services", href: "/services/contract-services" },
-    { name: "Compliance Assistance & EHS", href: "/services/compliance-assistance" },
+    { name: "Indoor Environment Quality (IEQ) Monitoring", href: "/services/indoor-air-quality" },
+    { name: "NORM Services", href: "/services/radiation-surveys" },
+    { name: "Compliance Assistance & Control Strategy Development", href: "/services/compliance-assistance" },
+    { name: "Industrial Hygiene Contract Services", href: "/services/contract-services" },
     { name: "Environmental Monitoring", href: "/services/environmental-monitoring" },
-    { name: "Radiation Surveys & Assessments", href: "/services/radiation-surveys" },
   ]
 
   return (

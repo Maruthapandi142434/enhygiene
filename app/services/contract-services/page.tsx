@@ -1,156 +1,77 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Reveal from "@/components/reveal"
 
 export default function ContractServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section
-        className="relative py-20 mt-20 overflow-hidden"
-        style={{
-          background: "#0d9488",
-          minHeight: "400px",
-        }}
-      >
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1
-              className="text-5xl font-bold mb-6 text-balance"
-              style={{
-                color: "#ffffff",
-                textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-              }}
-            >
-              Contract Services
-            </h1>
-            <p
-              className="text-xl mb-8 text-balance leading-relaxed"
-              style={{
-                color: "#ffffff",
-                textShadow: "1px 1px 2px rgba(0,0,0,0.3)",
-              }}
-            >
-              Flexible contract solutions for ongoing industrial hygiene and environmental health support tailored to
-              your organization's needs.
-            </p>
-            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg font-medium">
-              CALL OR TEXT (612) 296-2458
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Mobile-first: hero image on top */}
+      <Reveal as="section" delayMs={80} className="relative w-full h-[40vh] sm:h-[50vh] md:hidden" style={{ marginBottom: 5 }}>
+        <Image
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+          alt="Team discussing health & safety programs"
+          fill
+          className="object-cover"
+          unoptimized
+          priority
+        />
+      </Reveal>
 
-      {/* Services Overview */}
-      <section className="py-16 bg-gray-50">
+      {/* Hero: Text left, Image right */}
+      <section className="mt-20 py-16 bg-[#fdecec]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Contract Service Options</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We offer flexible contract arrangements to provide ongoing support for your industrial hygiene and safety
-              programs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl font-bold">👥</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">On-Site Support</h3>
-              <p className="text-gray-600 mb-4">
-                Dedicated industrial hygienist support at your facility on a regular schedule.
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            {/* Left: Text */}
+            <Reveal as="div" delayMs={0} className="max-w-2xl">
+              <span className="inline-block text-xs tracking-wide uppercase bg-white/70 text-teal-700 px-3 py-1 rounded-full mb-4">Capabilities</span>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-5">Contract Services</h1>
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-6">
+                EnHygiene’s contract services provide expert industrial hygiene support by certified professionals to
+                identify, evaluate, and control workplace environmental hazards through exposure monitoring, hazard
+                assessments, indoor air quality surveys, noise monitoring, chemical evaluations, ergonomic assessments,
+                and development of health and safety programs. Our services can range from regular site visits for
+                sampling and audits to development of customized safety strategies and compliance support.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Weekly/monthly visits
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Routine monitoring
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Staff training
-                </li>
+              <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">EnHygiene’s contract services include:</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <li>Custom analysis and measurement of environmental hazards</li>
+                <li>Exposure assessment monitoring for chemicals, dusts, fumes, noise, and biological agents</li>
+                <li>Indoor air quality assessment and control</li>
+                <li>Ergonomic evaluations and workstation design</li>
+                <li>Program and policy development for hazard reduction</li>
+                <li>Regular audits and inspections</li>
+                <li>Training and consultation on health and safety compliance</li>
               </ul>
-            </div>
+            </Reveal>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl font-bold">⏰</span>
+            {/* Right: Image with rounded/masked shape */}
+            <Reveal as="div" delayMs={140} className="relative h-64 sm:h-80 lg:h-[420px] w-full hidden md:block">
+              <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-md">
+                <Image
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+                  alt="Team discussing health & safety programs"
+                  fill
+                  className="object-cover"
+                  unoptimized
+                  priority
+                />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Retainer Services</h3>
-              <p className="text-gray-600 mb-4">
-                Priority access to our services with guaranteed response times and reduced rates.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Priority scheduling
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Discounted rates
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Emergency response
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-xl font-bold">📋</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">Program Management</h3>
-              <p className="text-gray-600 mb-4">Complete management of your industrial hygiene and safety programs.</p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Program development
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Compliance tracking
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <span className="text-green-500 mr-2">✓</span>
-                  Documentation management
-                </li>
-              </ul>
-            </div>
+              {/* Decorative corner cutout to mimic reference shape */}
+              <div className="hidden lg:block absolute -left-10 top-10 w-12 h-24 bg-[#fdecec] rounded-r-[2rem]" />
+            </Reveal>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Ready to Discuss Contract Options?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg font-medium">
-                📞 Call (612) 296-2458
-              </Button>
-              <Button
-                variant="outline"
-                className="border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-3 text-lg font-medium bg-transparent"
-              >
-                ✉️ Request Proposal
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* End hero */}
 
       <Footer />
     </div>
   )
 }
+

@@ -3,23 +3,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Layout from "@/components/layout"
-import { useEffect, useState, useRef } from "react"
+import Reveal from "@/components/reveal"
 import Link from "next/link"
 
 export default function EnhygienePage() {
-  const [heroVisible, setHeroVisible] = useState(false)
-  const [sectionTitleVisible, setSectionTitleVisible] = useState(false)
-
-  const heroRef = useRef<HTMLDivElement>(null)
-  const sectionTitleRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    // Trigger hero animation immediately
-    setTimeout(() => setHeroVisible(true), 300)
-    
-    // Trigger section title animation
-    setTimeout(() => setSectionTitleVisible(true), 800)
-  }, [])
+  // Scroll-based animations are handled by the <Reveal> component
 
   return (
     <Layout>
@@ -35,14 +23,7 @@ export default function EnhygienePage() {
     <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
 
     <div className="relative z-10 p-8 md:p-16">
-      <div
-        ref={heroRef}
-        className={`max-w-2xl text-white transition-all duration-1000 transform ${
-          heroVisible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-12"
-        }`}
-      >
+      <Reveal className="max-w-2xl text-white">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
           Environmental &<br />
           Industrial Hygiene Solutions
@@ -55,7 +36,7 @@ export default function EnhygienePage() {
         <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
           CALL OR TEXT (612) 296-2458
         </Button>
-      </div>
+      </Reveal>
     </div>
   </div>
 </section>
@@ -64,21 +45,17 @@ export default function EnhygienePage() {
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div
-            ref={sectionTitleRef}
-            className={`text-center mb-16 transition-all duration-800 transform ${
-              sectionTitleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
-          >
+          <Reveal className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Environmental and Industrial Hygiene Services</h2>
-          </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {/* Industrial Hygiene Services Card */}
-            <Link href="/services/industrial-hygiene/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            <Reveal as="div" delayMs={0} className="h-full">
+              <Link href="/services/industrial-hygiene/detail" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -126,14 +103,16 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
 
             {/* Indoor Air Quality Card */}
-            <Link href="/services/indoor-air-quality/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            <Reveal as="div" delayMs={100} className="h-full">
+              <Link href="/services/indoor-air-quality/detail" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -181,14 +160,16 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
 
-            {/* Virtual & Remote Services Card */}
-            <Link href="/services/virtual-remote/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            {/* NORM/NIR Services Card */}
+            <Reveal as="div" delayMs={200} className="h-full">
+              <Link href="/services/radiation-surveys" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -224,13 +205,15 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
 
-            <Link href="/services/compliance-assistance/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            <Reveal as="div" delayMs={300} className="h-full">
+              <Link href="/services/compliance-assistance/detail" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -274,13 +257,15 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
 
-            <Link href="/services/contract-services/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            <Reveal as="div" delayMs={400} className="h-full">
+              <Link href="/services/contract-services/detail" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -316,13 +301,15 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
 
-            <Link href="/services/environmental-monitoring/detail" className="h-full">
-              <Card
-                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer opacity-100 translate-y-0 h-full flex flex-col"
-              >
+            <Reveal as="div" delayMs={500} className="h-full">
+              <Link href="/services/environmental-monitoring/detail" className="h-full">
+                <Card
+                  className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
+                >
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
@@ -358,8 +345,9 @@ export default function EnhygienePage() {
                     </li>
                   </ul>
                 </CardContent>
-              </Card>
-            </Link>
+                </Card>
+              </Link>
+            </Reveal>
           </div>
         </div>
       </section>

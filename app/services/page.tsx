@@ -56,7 +56,35 @@ export default function ServicesPage() {
               </Card>
             </Link>
 
-            {/* Indoor Air Quality */}
+            {/* NORM Services */}
+            <Link href="/services/radiation-surveys">
+              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                <div
+                  className="h-48 bg-cover bg-center relative"
+                  style={{
+                    backgroundImage: `url('/industrial-environmental-monitoring-equipment-and-.jpg')`,
+                  }}
+                >
+                  <div className="absolute inset-0 bg-black/40 flex items-end">
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-white">NORM Services</h3>
+                    </div>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-gray-600 mb-4">
+                    Specialized surveys and assessments for Naturally Occurring Radioactive Material (NORM), including screening, risk evaluation, and compliance guidance.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Site surveys and screening</li>
+                    <li>• Exposure assessment</li>
+                    <li>• Control strategy recommendations</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* Indoor Environment Quality (IEQ) Monitoring */}
             <Link href="/services/indoor-air-quality/detail">
               <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
                 <div
@@ -67,7 +95,7 @@ export default function ServicesPage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-white">Indoor Air Quality (IAQ) Testing</h3>
+                      <h3 className="text-xl font-bold text-white">Indoor Environment Quality (IEQ) Monitoring</h3>
                     </div>
                   </div>
                 </div>
@@ -85,36 +113,9 @@ export default function ServicesPage() {
               </Card>
             </Link>
 
-            {/* Virtual & Remote Services */}
-            <Link href="/services/virtual-remote/detail">
-              <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-                <div
-                  className="h-48 bg-cover bg-center relative"
-                  style={{
-                    backgroundImage: `url('/worker-in-safety-vest-using-technology-remote-serv.jpg')`,
-                  }}
-                >
-                  <div className="absolute inset-0 bg-black/40 flex items-end">
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white">Virtual & Remote Services</h3>
-                    </div>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <p className="text-gray-600 mb-4">
-                    Enhygiene provides remote services to assist you, on either a scheduled and/or as-needed basis. Our virtual health and safety services are always conducted by a certified industrial hygienist (CIH) and certified safety professional (CSP) without the need for a site visit.
-                  </p>
-                  <ul className="space-y-2 text-sm">
-                    <li>• Employee Exposure Monitoring</li>
-                    <li>• Indoor Air Quality (IAQ) Evaluations & Testing</li>
-                    <li>• PPE Assessments</li>
-                    <li>• Job Hazard Analysis (JHA)</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </Link>
+            
 
-            {/* Health & Safety Contract Services */}
+            {/* Industrial Hygiene Contract Services */}
             <Link href="/services/contract-services/detail">
               <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
                 <div
@@ -125,7 +126,7 @@ export default function ServicesPage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-white">Health & Safety Contract Services</h3>
+                      <h3 className="text-xl font-bold text-white">Industrial Hygiene Contract Services</h3>
                     </div>
                   </div>
                 </div>
@@ -142,7 +143,7 @@ export default function ServicesPage() {
               </Card>
             </Link>
 
-            {/* Compliance Assistance & EHS */}
+            {/* Compliance Assistance & Control Strategy Development */}
             <Link href="/services/compliance-assistance/detail">
               <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
                 <div
@@ -153,7 +154,7 @@ export default function ServicesPage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-white">Compliance Assistance & EHS</h3>
+                      <h3 className="text-xl font-bold text-white">Compliance Assistance & Control Strategy Development</h3>
                     </div>
                   </div>
                 </div>

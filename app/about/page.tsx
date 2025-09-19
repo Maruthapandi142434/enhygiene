@@ -2,8 +2,80 @@
 
 import Image from "next/image"
 import Layout from "@/components/layout"
+import { useEffect, useRef, useState } from "react"
 
 export default function AboutPage() {
+  // Scroll-based zoom state
+  // Use a non-transformed wrapper for measurements to avoid feedback loops
+  const imgMeasureRef = useRef<HTMLDivElement>(null)
+  const [scale, setScale] = useState(1)
+  const isActiveRef = useRef(false)
+  const rafRef = useRef<number | null>(null)
+
+  useEffect(() => {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    if (prefersReduced) {
+      setScale(1)
+      return
+    }
+
+    const compute = () => {
+      const el = imgMeasureRef.current
+      if (!el) return
+
+      const rect = el.getBoundingClientRect()
+      const vh = window.innerHeight || 1
+
+      // Use the element center for smoother mapping
+      const centerY = rect.top + rect.height / 2
+      const start = vh * 0.95 // start zoom when center is near bottom
+      const end = vh * 0.15 // complete zoom when center is near top
+      const range = Math.max(start - end, 1)
+      const raw = (start - centerY) / range
+      const progress = Math.min(Math.max(raw, 0), 1)
+
+      // Scale from 0.96 to 1.1 for a subtle effect
+      const nextScale = 0.96 + progress * 0.14
+      setScale(nextScale)
+    }
+
+    const schedule = () => {
+      if (rafRef.current != null) return
+      rafRef.current = window.requestAnimationFrame(() => {
+        rafRef.current = null
+        compute()
+      })
+    }
+
+    const handleScroll = () => {
+      if (!isActiveRef.current) return
+      schedule()
+    }
+
+    // Run once and attach listeners
+    compute()
+
+    // Observe visibility to avoid running when far off-screen
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          isActiveRef.current = e.isIntersecting
+          if (e.isIntersecting) schedule()
+        })
+      },
+      { root: null, rootMargin: "200px 0px", threshold: [0, 0.1, 0.5, 1] }
+    )
+    if (imgMeasureRef.current) io.observe(imgMeasureRef.current)
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    window.addEventListener("resize", compute)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", compute)
+      if (io && imgMeasureRef.current) io.unobserve(imgMeasureRef.current)
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current)
+    }
+  }, [])
   return (
     <Layout>
       {/* About Section */}
@@ -64,16 +136,26 @@ export default function AboutPage() {
 
             {/* Right Side - Image */}
             <div className="flex justify-center md:justify-end p-7 order-1 md:order-2">
-              <div className="relative w-full max-w-2xl h-[600px] rounded-2xl overflow-hidden shadow-xl">
-  <Image
-    src="/about.jpeg"
-    alt="Rajkumar Jayabalan - Principal Consultant"
-    fill
-    className="object-cover"
-  />
-</div>
-
-
+              {/* Non-transformed wrapper for measuring position */}
+              <div ref={imgMeasureRef} className="w-full max-w-2xl">
+                {/* Transformed inner container */}
+                <div
+                  className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-xl"
+                  style={{
+                    transform: `scale(${scale})`,
+                    transformOrigin: "center center",
+                    transition: "transform 0.1s ease-out",
+                    willChange: "transform",
+                  }}
+                >
+                  <Image
+                    src="/about.jpeg"
+                    alt="Rajkumar Jayabalan - Principal Consultant"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

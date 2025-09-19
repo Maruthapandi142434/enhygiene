@@ -1,129 +1,60 @@
 "use client"
 
-import { Phone, Mail, FileCheck, AlertTriangle, BookOpen, CheckCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { ArrowRight } from "lucide-react"
 import Layout from "@/components/layout"
+import Reveal from "@/components/reveal"
 
 export default function ComplianceAssistancePage() {
   return (
     <Layout>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal-600 to-blue-700 text-white py-20">
+      {/* Hero Section: Image left, content right */}
+      <section className="pt-20 md:pt-24 pb-12 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6 text-balance">Compliance Assistance & EHS</h1>
-            <p className="text-xl mb-8 text-balance leading-relaxed">
-              Expert guidance to ensure your organization meets all regulatory requirements and maintains the highest
-              environmental health and safety standards.
-            </p>
-            <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg font-medium">
-              CALL OR TEXT (612) 296-2458
-            </Button>
-          </div>
-        </div>
-      </section>
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            {/* Left: Image */}
+            <Reveal as="div" delayMs={0} className="relative h-96 sm:h-[520px] lg:h-[640px] w-full overflow-hidden rounded-2xl shadow-md">
+              <Image
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+                alt="Compliance and EHS documentation review"
+                fill
+                className="object-cover"
+                unoptimized
+                priority
+              />
+            </Reveal>
 
-      {/* Services Overview */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Compliance & EHS Services</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We help organizations navigate complex regulatory requirements and build robust environmental health and
-              safety programs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <FileCheck className="w-12 h-12 text-teal-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Regulatory Compliance</h3>
-              <p className="text-gray-600 mb-4">
-                Comprehensive compliance assessments and ongoing support for OSHA, EPA, and other regulatory
-                requirements.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  OSHA compliance audits
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  EPA regulatory support
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Documentation review
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <AlertTriangle className="w-12 h-12 text-teal-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Risk Assessment</h3>
-              <p className="text-gray-600 mb-4">
-                Systematic identification and evaluation of workplace hazards and environmental risks.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Hazard identification
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Risk prioritization
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Mitigation strategies
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border">
-              <BookOpen className="w-12 h-12 text-teal-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Program Development</h3>
-              <p className="text-gray-600 mb-4">
-                Custom EHS program development and implementation tailored to your industry and operations.
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Policy development
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Training programs
-                </li>
-                <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                  Performance metrics
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Need Compliance Support?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg font-medium">
-                <Phone className="w-5 h-5 mr-2" />
-                Call (612) 296-2458
-              </Button>
-              <Button
-                variant="outline"
-                className="border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-3 text-lg font-medium bg-transparent"
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                Schedule Assessment
-              </Button>
-            </div>
+            {/* Right: Content */}
+            <Reveal as="div" delayMs={140} className="self-start">
+              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-4 underline underline-offset-8 decoration-2 leading-tight">
+                Compliance Assistance & EHS
+              </h1>
+              <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed max-w-2xl">
+                <p>
+                  Navigating complex occupational health and safety regulations can be challenging. EnHygiene’s
+                  professionals will assist your organization in complying with Indian laws such as the Factories Act and
+                  Pollution Control Board guidelines, as well as relevant international standards, facilitating audit
+                  readiness and minimizing legal risks.
+                </p>
+                <p>
+                  EnHygiene’s certified professionals will help your organization to develop the control strategy by applying
+                  the hierarchy of controls including elimination, substitution, engineering controls, administrative controls,
+                  and personal protective equipment (PPE) to mitigate or eliminate identified hazards. Our services include
+                  the development of the following:
+                </p>
+                <h3 className="text-lg md:text-xl font-semibold mt-1">Programs we develop include:</h3>
+                <ul className="space-y-2 mt-1">
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Compliance register</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Industrial Hygiene Program</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Hearing conservation program</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Respiratory protection program</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Chemical management program</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>IEQ Management program</span></li>
+                  <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 mt-1 text-gray-800" /> <span>Other programs based on identified hazards</span></li>
+                </ul>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -131,3 +62,4 @@ export default function ComplianceAssistancePage() {
     </Layout>
   )
 }
+
