@@ -49,15 +49,15 @@ export default function Header() {
         isScrolled ? "bg-[#0260a8] backdrop-blur-sm shadow-sm" : "bg-[#0260a8]"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 bg-[#0260a8]">
+      <div className="container mx-auto px-4 py-6 bg-[#0260a8]">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3">
             <div className="relative ">
               <Image
                 src="/final--enhygine--logo.png"
                 alt="Enhygiene Logo"
-                width={200}
-                height={100}
+                width={260}
+                height={130}
                 className="object-contain"
                 priority
               />
@@ -69,17 +69,17 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10 text-xl">
             <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <button className="flex items-center space-x-1 text-white hover:text-white font-medium transition-colors">
                 <span>Services</span>
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
+                  className={`w-5 h-5 transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
                 />
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-64 bg-blue rounded-lg shadow-xl border border-gray-200 py-2 z-50 transition-all duration-200 ${
+                className={`absolute top-full left-0 mt-2 w-80 bg-blue rounded-lg shadow-xl border border-gray-200 py-2 z-50 transition-all duration-200 ${
                   isServicesOpen
                     ? "opacity-100 visible transform translate-y-0"
                     : "opacity-0 invisible transform -translate-y-2"
@@ -89,7 +89,7 @@ export default function Header() {
                   <Link
                     key={index}
                     href={item.href}
-                    className="block px-4 py-3 text-sm bg-[#0260a8] text-white hover:bg-gray-50 hover:text-[#0260a8] transition-colors duration-150 border-b border-gray-100 last:border-b-0"
+                    className="block px-4 py-4 text-lg bg-[#0260a8] text-white hover:bg-gray-50 hover:text-[#0260a8] transition-colors duration-150 border-b border-gray-100 last:border-b-0"
                   >
                     {item.name}
                   </Link>
@@ -102,7 +102,7 @@ export default function Header() {
             </Link>
 
             <Link href="/contact">
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-md font-medium">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-md font-medium text-lg">
                 SCHEDULE A CONSULTATION
               </Button>
             </Link>
@@ -110,21 +110,21 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200">
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 text-lg">
             <div className="flex flex-col space-y-4 pt-4">
               <div>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full text-left text-white hover:text-white font-medium"
+                  className="flex items-center justify-between w-full text-left text-white hover:text-white font-medium text-lg"
                 >
                   <span>Services</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`w-5 h-5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {isServicesOpen && (
                   <div className="mt-2 pl-4 space-y-2">
@@ -132,7 +132,7 @@ export default function Header() {
                       <Link
                         key={index}
                         href={item.href}
-                        className="block text-sm text-white hover:text-white transition-colors"
+                        className="block text-lg text-white hover:text-white transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
@@ -141,11 +141,11 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <Link href="/about" className="text-left text-white hover:text-white font-medium">
+              <Link href="/about" className="text-left text-white hover:text-white font-medium text-lg">
                 About
               </Link>
               <Link href="/contact">
-                <Button className="bg-cyan-500 hover:bg-cyan-600 text-white w-full">SCHEDULE A CONSULTATION</Button>
+                <Button className="bg-cyan-500 hover:bg-cyan-600 text-white w-full text-lg">SCHEDULE A CONSULTATION</Button>
               </Link>
             </div>
           </nav>

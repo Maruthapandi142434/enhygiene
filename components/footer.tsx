@@ -12,16 +12,16 @@ export default function Footer() {
                 <Image
                   src="/final--enhygine--logo.png"
                   alt="Enhygiene Logo"
-                  width={160}
-                  height={80}
+                  width={320}
+                  height={320}
                   className="object-contain"
                   priority
                 />
               </div>
              
             </Link>
-            <p className="text-gray-400 leading-relaxed">
-              Environmental Health & Safety Solutions specializing in occupational and environmental health hazards.
+            <p className="text-gray-400 leading-relaxed text-justify">
+              Environmental & Industrial Solutions specializing in occupation, monitoring and controlling workplace and environmental hazards.
             </p>
           </div>
 
@@ -104,20 +104,16 @@ export default function Footer() {
                   Careers
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors" style={{ color: "#e5e7eb" }}>
-                  News
-                </Link>
-              </li>
+             
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2" style={{ color: "#e5e7eb" }}>
-              <li>(612) 296-2458</li>
+              <li>(+91) 9566232442</li>
               <li>raj@enhygiene.com</li>
-              <li>Minneapolis, MN</li>
+              <li>Chennai, IN</li>
             </ul>
             <div className="mt-4">
               <Link href="/contact">
@@ -130,7 +126,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Enhygiene Environmental Health & Safety. All rights reserved.</p>
+          <p>&copy; 2025 Enhygiene Counsultancy private limited. All rights reserved.</p>
         </div>
       </div>
     </footer>

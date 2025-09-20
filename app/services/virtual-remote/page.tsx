@@ -129,7 +129,7 @@ export default function VirtualRemoteServicesPage() {
             safety needs.
           </p>
           <Button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-medium rounded-md">
-            CALL OR TEXT (612) 296-2458
+            CALL OR WHATSAPP
           </Button>
         </div>
       </section>

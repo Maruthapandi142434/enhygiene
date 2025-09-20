@@ -34,7 +34,7 @@ export default function EnhygienePage() {
           hazards.
         </p>
         <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
-          CALL OR TEXT (612) 296-2458
+          CALL OR WHATSAPP
         </Button>
       </Reveal>
     </div>
@@ -52,7 +52,7 @@ export default function EnhygienePage() {
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {/* Industrial Hygiene Services Card */}
             <Reveal as="div" delayMs={0} className="h-full">
-              <Link href="/services/industrial-hygiene/detail" className="h-full">
+              <Link href="/services/industrial-hygiene" className="h-full">
                 <Card
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
                 >
@@ -109,7 +109,7 @@ export default function EnhygienePage() {
 
             {/* Indoor Air Quality Card */}
             <Reveal as="div" delayMs={100} className="h-full">
-              <Link href="/services/indoor-air-quality/detail" className="h-full">
+              <Link href="/services/indoor-air-quality" className="h-full">
                 <Card
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
                 >
@@ -210,7 +210,7 @@ export default function EnhygienePage() {
             </Reveal>
 
             <Reveal as="div" delayMs={300} className="h-full">
-              <Link href="/services/compliance-assistance/detail" className="h-full">
+              <Link href="/services/compliance-assistance" className="h-full">
                 <Card
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
                 >
@@ -262,7 +262,7 @@ export default function EnhygienePage() {
             </Reveal>
 
             <Reveal as="div" delayMs={400} className="h-full">
-              <Link href="/services/contract-services/detail" className="h-full">
+              <Link href="/services/contract-services" className="h-full">
                 <Card
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
                 >
@@ -306,7 +306,7 @@ export default function EnhygienePage() {
             </Reveal>
 
             <Reveal as="div" delayMs={500} className="h-full">
-              <Link href="/services/environmental-monitoring/detail" className="h-full">
+              <Link href="/services/environmental-monitoring" className="h-full">
                 <Card
                   className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform cursor-pointer h-full flex flex-col"
                 >
