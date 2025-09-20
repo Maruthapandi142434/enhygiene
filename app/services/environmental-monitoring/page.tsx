@@ -23,7 +23,7 @@ export default function EnvironmentalMonitoringPage() {
             {/* Left: Text */}
             <Reveal as="div" delayMs={0}>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Environmental Monitoring</h1>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
                 EnHygiene’s environmental professionals provide expert measurement, reporting, and compliance assurance
                 that help your company control pollution, adhere to legal standards, protect employees and the
                 community, and build trust with stakeholders.

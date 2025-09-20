@@ -30,7 +30,7 @@ export default function ComplianceAssistancePage() {
               <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-4 underline underline-offset-8 decoration-2 leading-tight">
                 Compliance Assistance & EHS
               </h1>
-              <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed max-w-2xl">
+              <div className="space-y-4 text-gray-700 text-sm md:text-base leading-relaxed max-w-2xl text-justify">
                 <p>
                   Navigating complex occupational health and safety regulations can be challenging. EnHygiene’s
                   professionals will assist your organization in complying with Indian laws such as the Factories Act and

@@ -11,35 +11,35 @@ export default function EnhygienePage() {
 
   return (
     <Layout>
-     {/* Hero Section */}
-<section className="flex items-center relative overflow-hidden px-4 md:px-12 py-12 sm:py-20">
+      {/* Hero Section */}
+      <section className="flex items-center relative overflow-hidden px-4 md:px-12 py-12 sm:py-20">
+        <div
+          className="relative w-full rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/WhatsApp Image 2025-09-20 at 09.33.49.jpeg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
 
-  <div
-    className="relative w-full rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
-    style={{
-      backgroundImage: `url('/health-safety-environment-moss-background.jpeg')`,
-    }}
-  >
-    <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
-
-    <div className="relative z-10 p-8 md:p-16">
-      <Reveal className="max-w-2xl text-white">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
-          Environmental &<br />
-          Industrial Hygiene Solutions
-        </h1>
-        <p className="text-lg sm:text-xl mb-8 leading-relaxed">
-          Creating a safe, healthy, and productive workplace to protect employees
-          by identifying, recognizing, evaluating, and controlling workplace
-          hazards.
-        </p>
-        <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
-          CALL OR WHATSAPP
-        </Button>
-      </Reveal>
-    </div>
-  </div>
-</section>
+          <div className="relative z-10 p-8 md:p-16">
+            <div className="flex justify-center md:justify-end">
+            <Reveal className="max-w-2xl text-white text-center md:text-right">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6">
+                Environmental &<br />
+                Industrial Hygiene Solutions
+              </h1>
+              <p className="text-lg sm:text-xl mb-8 leading-relaxed text-justify">
+                Creating a safe, healthy, and productive workplace to protect employees
+                by identifying, recognizing, evaluating, and controlling workplace hazards.
+              </p>
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
+                CALL OR WHATSAPP
+              </Button>
+            </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Services Section */}

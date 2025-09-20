@@ -30,7 +30,7 @@ export default function ContractServicesPage() {
             <Reveal as="div" delayMs={0} className="max-w-2xl">
               <span className="inline-block text-xs tracking-wide uppercase bg-white/70 text-teal-700 px-3 py-1 rounded-full mb-4">Capabilities</span>
               <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-5">Contract Services</h1>
-              <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-6">
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-6 text-justify">
                 EnHygiene’s contract services provide expert industrial hygiene support by certified professionals to
                 identify, evaluate, and control workplace environmental hazards through exposure monitoring, hazard
                 assessments, indoor air quality surveys, noise monitoring, chemical evaluations, ergonomic assessments,
@@ -38,7 +38,7 @@ export default function ContractServicesPage() {
                 sampling and audits to development of customized safety strategies and compliance support.
               </p>
               <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">EnHygiene’s contract services include:</h3>
-              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+              <ul className="list-disc pl-6 space-y-2 text-gray-700 text-justify">
                 <li>Custom analysis and measurement of environmental hazards</li>
                 <li>Exposure assessment monitoring for chemicals, dusts, fumes, noise, and biological agents</li>
                 <li>Indoor air quality assessment and control</li>

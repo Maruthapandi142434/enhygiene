@@ -36,7 +36,7 @@ export default function RadiationSurveysPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 Naturally Occurring Radioactive Materials (NORMs)
               </h1>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
                 Naturally Occurring Radioactive Materials (NORM) usually consists of industrial wastes or by-products enriched with radioactive elements that exist in the natural environment. This includes uranium, thorium, potassium, radium and radon. EnHygiene’s Radiation Safety Professionals will help companies to identify potential hazards related to ionizing and non-ionizing radiation, develop suitable control methods to ensure worker protection.
               </p>
               <ul className="space-y-3 text-gray-800 text-lg list-disc pl-5">

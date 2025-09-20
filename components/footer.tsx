@@ -21,7 +21,7 @@ export default function Footer() {
              
             </Link>
             <p className="text-gray-400 leading-relaxed text-justify">
-              Environmental & Industrial Solutions specializing in occupation, monitoring and controlling workplace and environmental hazards.
+            Environmental and industrial hygiene solutions specialised in assessing, monitoring, and controlling workplace & environmental hazards.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2" style={{ color: "#e5e7eb" }}>
-              <li>(+91) 9566232442</li>
+              <li>(+91) 95662 32442</li>
               <li>raj@enhygiene.com</li>
               <li>Chennai, IN</li>
             </ul>
