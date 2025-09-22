@@ -99,11 +99,7 @@ export default function Footer() {
                   All Services
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors" style={{ color: "#e5e7eb" }}>
-                  Careers
-                </Link>
-              </li>
+              
              
             </ul>
           </div>
