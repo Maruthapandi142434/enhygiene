@@ -42,10 +42,7 @@ export default function VirtualRemoteDetail() {
                 <span className="text-cyan-500 mr-3 mt-1">→</span>
                 <span className="text-gray-700">Training</span>
               </li>
-              <li className="flex items-start">
-                <span className="text-cyan-500 mr-3 mt-1">→</span>
-                <span className="text-gray-700">Non-ionizing radiation hazards(NIR)</span>
-              </li>
+            
             </ul>
 
             <div className="flex gap-4">

@@ -199,10 +199,7 @@ export default function EnhygienePage() {
                       <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
                      Training
                     </li>
-                    <li className="flex items-center">
-                      <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                     Non-ionizing radiation hazards(NIR)
-                    </li>
+                    
                   </ul>
                 </CardContent>
                 </Card>
