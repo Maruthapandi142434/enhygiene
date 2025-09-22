@@ -53,7 +53,7 @@ export default function ContractServicesPage() {
             <Reveal as="div" delayMs={140} className="relative h-64 sm:h-80 lg:h-[420px] w-full hidden md:block">
               <div className="absolute inset-0 rounded-[2rem] overflow-hidden shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop"
+                  src="/indurtial/WhatsApp Image 2025-09-22 at 14.32.58.jpeg"
                   alt="Team discussing health & safety programs"
                   fill
                   className="object-cover"

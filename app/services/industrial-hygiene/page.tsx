@@ -251,7 +251,7 @@ export default function IndustrialHygieneServicesPage() {
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   {/* Image Left */}
                   <Reveal as="div" delayMs={0} className="relative h-80 sm:h-96 lg:h-[520px] w-full overflow-hidden rounded-xl shadow-md">
-                    <Image src="/indurtial/WhatsApp Image 2025-09-17 at 16.19.57.jpeg" alt="Reporting and monitoring" fill className="object-contain" />
+                    <Image src="/indurtial/WhatsApp Image 2025-09-22 at 14.29.33.jpeg" alt="Reporting and monitoring" fill className="object-contain" />
                   </Reveal>
                   {/* Content Right */}
                   <Reveal as="div" delayMs={140}>
