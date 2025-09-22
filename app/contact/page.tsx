@@ -94,7 +94,7 @@ export default function ContactPage() {
                 
                   <p className="text-gray-600 text-justify">
                     We are based in the Chennai metropolitan area and we deliver industrial hygiene consulting services to clients throughout
-                    the state of Tamilnadu.
+                   india and globally.
                   </p>
 
                   <div className="space-y-4">
