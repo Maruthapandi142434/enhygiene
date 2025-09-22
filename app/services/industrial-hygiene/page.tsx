@@ -15,7 +15,7 @@ export default function IndustrialHygieneServicesPage() {
       {/* Hero Section */}
       <section className="pt-24 md:pt-28 pb-16 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container mx-auto px-4">
-          <div className="grid gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Content */}
             <Reveal as="div" delayMs={140} className="max-w-3xl mx-auto text-center lg:text-left">
               <h1 className="text-2xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
@@ -37,10 +37,10 @@ export default function IndustrialHygieneServicesPage() {
               </div>
             </Reveal>
 
-            {/* Image (mobile only, shown under text) */}
-            <Reveal as="div" delayMs={0} className="relative h-96 sm:h-[520px] w-full overflow-hidden rounded-xl shadow-md md:hidden">
+            {/* Image */}
+            <Reveal as="div" delayMs={0} className="relative h-72 sm:h-96 lg:h-[520px] w-full overflow-hidden rounded-xl shadow-md lg:justify-self-end">
               <Image
-                src="/indurtial/picture1.png"
+                src="/indurtial/Picture1.png"
                 alt="Industrial Hygiene assessment in workplace"
                 fill
                 className="object-contain"
