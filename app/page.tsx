@@ -14,7 +14,7 @@ export default function EnhygienePage() {
       {/* Hero Section */}
       <section className="flex items-center relative overflow-hidden px-4 md:px-12 py-12 sm:py-20">
         <div
-          className="relative w-full rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat"
+          className="relative w-full rounded-2xl overflow-hidden bg-cover bg-center bg-no-repeat min-h-[70vh] sm:min-h-[90vh] lg:min-h-screen"
           style={{
             backgroundImage: `url('/WhatsApp Image 2025-09-20 at 09.33.49.jpeg')`,
           }}
@@ -32,9 +32,7 @@ export default function EnhygienePage() {
                 Creating a safe, healthy, and productive workplace to protect employees
                 by identifying, recognizing, evaluating, and controlling workplace hazards.
               </p>
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium rounded-lg transform hover:scale-105 transition-all duration-300">
-                CALL OR WHATSAPP
-              </Button>
+             
             </Reveal>
             </div>
           </div>
@@ -173,7 +171,7 @@ export default function EnhygienePage() {
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
-                    backgroundImage: `url('/worker-in-safety-vest-using-technology-remote-serv.jpg')`,
+                    backgroundImage: `url('/workers-in-safety-gear-with-tablets-and-equipment.jpg')`,
                   }}
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
@@ -214,7 +212,7 @@ export default function EnhygienePage() {
                 <div
                   className="h-64 bg-cover bg-center relative"
                   style={{
-                    backgroundImage: `url('/workers-in-safety-gear-with-tablets-and-equipment.jpg')`,
+                    backgroundImage: `url('/worker-in-safety-vest-using-technology-remote-serv.jpg')`,
                   }}
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">

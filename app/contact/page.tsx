@@ -75,7 +75,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Schedule a Consultation</h1>
             <p className="text-xl text-teal-100 text-balance">
-              Get expert industrial hygiene and safety consulting services tailored to your needs
+              Get expert environmental and Industrial hygiene tailored to your needs
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 <div className="space-y-6">
                 
                   <p className="text-gray-600 text-justify">
-                    We are based in the Chennai and we deliver industrial hygiene consulting services to clients throughout
+                    We are based in the Chennai metropolitan area and we deliver industrial hygiene consulting services to clients throughout
                     the state of Tamilnadu.
                   </p>
 
@@ -123,7 +123,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-gray-900">Service Area</p>
-                        <p className="text-gray-600">Minneapolis/St. Paul Metro & Nationwide</p>
+                        <p className="text-gray-600">Chennai, INDIA
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -131,7 +132,7 @@ export default function ContactPage() {
                   <div className="bg-teal-50 p-6 rounded-lg border border-teal-200">
                     <h3 className="font-semibold text-teal-900 mb-2">Need Immediate Assistance?</h3>
                     <p className="text-teal-700 mb-3">
-                      Call or text: <strong>(+91) 95662 32442</strong>
+                      Call or Whatsapp: <strong>(+91) 95662 32442</strong>
                     </p>
                     <p className="text-teal-700">
                       Or send an email to: <strong>raj@enhygiene.com</strong>

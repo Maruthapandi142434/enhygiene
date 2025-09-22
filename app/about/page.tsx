@@ -128,7 +128,7 @@ export default function AboutPage() {
               </ul>
 
               <p className="text-base md:text-xl text-gray-600 mt-6 leading-relaxed text-justify">
-                At EnHygiene, Raj continues to drive excellence in Industrial Hygiene Services,
+                At EnHygiene, we continues to drive excellence in Industrial Hygiene Services,
                 mentoring teams, advising organizations, and advancing best practices in
                 occupational health and environmental stewardship.
               </p>

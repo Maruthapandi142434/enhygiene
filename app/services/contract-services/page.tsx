@@ -28,7 +28,7 @@ export default function ContractServicesPage() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Text */}
             <Reveal as="div" delayMs={0} className="max-w-2xl">
-              <span className="inline-block text-xs tracking-wide uppercase bg-white/70 text-teal-700 px-3 py-1 rounded-full mb-4">Capabilities</span>
+              {/* <span className="inline-block text-xs tracking-wide uppercase bg-white/70 text-teal-700 px-3 py-1 rounded-full mb-4">Capabilities</span> */}
               <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-5">Contract Services</h1>
               <p className="text-gray-700 leading-relaxed text-base md:text-lg mb-6 text-justify">
                 EnHygiene’s contract services provide expert industrial hygiene support by certified professionals to

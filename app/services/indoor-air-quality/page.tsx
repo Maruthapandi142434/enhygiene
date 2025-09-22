@@ -20,7 +20,7 @@ export default function IndoorAirQualityPage() {
       {/* Mobile-first: show hero image first */}
       <Reveal as="section" delayMs={80} className="relative w-full h-[40vh] sm:h-[50vh] md:hidden">
         <Image
-          src="/indurtial/WhatsApp Image 2025-09-15 at 12.12.34.jpeg"
+          src="/WhatsApp Image 2025-09-22 at 12.29.21.jpeg"
           alt="Indoor environment quality"
           fill
           className="object-cover"
@@ -29,10 +29,10 @@ export default function IndoorAirQualityPage() {
       </Reveal>
 
       {/* Hero Section: Text first */}
-      <Reveal as="section" delayMs={0} className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <Reveal as="section" delayMs={0} className="pt-24 md:pt-32 pb-8 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal as="div" delayMs={100} className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6 leading-tight text-balance">
               Indoor Environment Quality (IEQ) Monitoring
             </h1>
             <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
@@ -45,9 +45,9 @@ export default function IndoorAirQualityPage() {
       </Reveal>
 
       {/* Full-width image under hero: desktop/tablet only */}
-      <Reveal as="section" delayMs={200} className="relative w-full h-[60vh] sm:h-[70vh] hidden md:block">
+      <Reveal as="section" delayMs={200} className="relative w-full h-[60vh] sm:h-[70vh] hidden md:block mt-6">
         <Image
-          src="/indurtial/WhatsApp Image 2025-09-15 at 12.12.34.jpeg"
+          src="/WhatsApp Image 2025-09-22 at 12.29.21.jpeg"
           alt="Indoor environment quality"
           fill
           className="object-cover"
@@ -108,11 +108,11 @@ export default function IndoorAirQualityPage() {
               <h3 className="text-xl font-semibold mb-2">Illumination / Lighting of Work</h3>
               <p className="text-gray-700 text-sm leading-relaxed">Light Level – Lux</p>
             </Reveal>
-            <Reveal as="div" delayMs={560} className="bg-white p-6 rounded-lg shadow-sm border">
+            {/* <Reveal as="div" delayMs={560} className="bg-white p-6 rounded-lg shadow-sm border">
               <Shield className="w-10 h-10 text-teal-600 mb-3" />
               <h3 className="text-xl font-semibold mb-2">Asbestos</h3>
               <p className="text-gray-700 text-sm leading-relaxed">Bulk Material Sample</p>
-            </Reveal>
+            </Reveal> */}
             <Reveal as="div" delayMs={640} className="bg-white p-6 rounded-lg shadow-sm border">
               <Shield className="w-10 h-10 text-teal-600 mb-3" />
               <h3 className="text-xl font-semibold mb-2">Microbiological</h3>
