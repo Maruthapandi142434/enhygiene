@@ -1,0 +1,24 @@
+# cPanel/Apache configuration for Node.js (Phusion Passenger)
+# Place this file in the document root of your site or subdomain that should serve the app.
+
+PassengerEnabled on
+PassengerAppType node
+PassengerStartupFile server.js
+PassengerEnv production
+
+# Optional: pin Node binary used by Passenger if your host requires it
+# Find the exact path in cPanel > Node.js Selector or from your hosting docs and uncomment below
+# PassengerNodejs /opt/alt/alt-nodejs18/root/usr/bin/node
+
+# Optional: set application root explicitly if .htaccess is NOT in the app root
+# Replace /home/USER/yourapp with your actual path if needed
+# PassengerAppRoot /home/USER/yourapp
+
+# If your app is in a subfolder/domain docroot, you may need to set the base URI
+# For example, if the app lives under /app, use:
+# PassengerBaseURI /app
+
+# Improve compatibility
+Options -MultiViews
+
+# No rewrite rules are needed; Apache hands requests to Passenger which runs server.js
