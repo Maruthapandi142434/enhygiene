@@ -178,7 +178,7 @@ export default function EnhygienePage() {
                 >
                   <div className="absolute inset-0 bg-black/40 flex items-end">
                     <div className="p-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">NORM/NIR Services</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">NORM Services</h3>
                     </div>
                   </div>
                 </div>

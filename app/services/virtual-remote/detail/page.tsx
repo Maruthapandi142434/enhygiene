@@ -21,7 +21,7 @@ export default function VirtualRemoteDetail() {
 
           {/* Right side - Content */}
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">NORM/NIR Services</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">NORM Services</h1>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
              Naturally Occurring Radioactive Materials (NORM) usually consists of industrial wastes or by-products enriched with radioactive elements that exist in the natural environment. This includes uranium, thorium, potassium, radium and radon.  EnHygiene’s Radiation Safety Professionals will help companies to identify potential hazards related to ionizing and non-ionizing radiation, develop suitable control methods to ensure worker protection.
