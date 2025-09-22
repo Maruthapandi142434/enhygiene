@@ -85,7 +85,7 @@ export default function AboutPage() {
             About EnHygiene
           </h2>
           <hr />
-          <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed pt-4">
+          <p className="text-lg md:text-2xl text-gray-600 mb-4 leading-relaxed pt-4 text-justify">
             We are professionals trained to identify and mitigate workplace hazards that can lead
             to health issues. Our goal is to create a safe, healthy, and productive workplaces to
             protect employees by applying scientific principles and methodologies to assess
@@ -93,7 +93,7 @@ export default function AboutPage() {
             standards.
           </p>
 
-          <p className="text-lg md:text-2xl text-gray-700 mb-6 leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-700 mb-6 leading-relaxed text-justify">
             <strong>Rajkumar Jayabalan</strong>, EnHygiene’s Principal Consultant, has over{" "}
             <strong>25 years of experience</strong> in Environmental Health and Industrial Hygiene.
           </p>
@@ -101,14 +101,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-start">
             {/* Left Side - Content */}
             <div className="flex flex-col justify-center order-2 md:order-1">
-              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed text-justify">
                 Raj is a <strong>Certified Industrial Hygienist (CIH)</strong> and holds a Masters
                 of Science in Industrial Hygiene and Safety. Over his career, he has successfully
                 led projects across diverse industries, ensuring compliance with health regulations
                 and fostering safe, sustainable workplace practices.
               </p>
 
-              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-600 mb-4 leading-relaxed text-justify">
                 Recognized as a <strong>Subject Matter Expert (SME)</strong> in Industrial Hygiene
                 Services, Raj specializes in occupational exposure assessment, risk management,
                 workplace monitoring, and the development of tailored health and safety programs.
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 <li>➜ Implementing <strong>prevention strategies</strong> for long-term workplace safety.</li>
               </ul>
 
-              <p className="text-base md:text-xl text-gray-600 mt-6 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-600 mt-6 leading-relaxed text-justify">
                 At EnHygiene, Raj continues to drive excellence in Industrial Hygiene Services,
                 mentoring teams, advising organizations, and advancing best practices in
                 occupational health and environmental stewardship.
