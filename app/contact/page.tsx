@@ -75,7 +75,8 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Schedule a Consultation</h1>
             <p className="text-xl text-teal-100 text-balance">
-              Get expert environmental and Industrial hygiene tailored to your needs
+              
+              Get expert environmental and industrial hygiene solutions tailored to your needs
             </p>
           </div>
         </div>
