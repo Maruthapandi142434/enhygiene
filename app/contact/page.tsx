@@ -128,6 +128,18 @@ export default function ContactPage() {
                         </p>
                       </div>
                     </div>
+
+                    <div className="flex items-center space-x-3">
+                      <div className="w-6 h-6 bg-teal-600 rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm">🌐</span>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-gray-900">Website</p>
+                        <p className="text-gray-600">
+                          <a href="https://www.enhygiene.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-teal-700">www.enhygiene.com</a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="bg-teal-50 p-6 rounded-lg border border-teal-200">

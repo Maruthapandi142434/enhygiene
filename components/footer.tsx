@@ -110,6 +110,7 @@ export default function Footer() {
               <li>(+91) 95662 32442</li>
               <li>raj@enhygiene.com</li>
               <li>Chennai, IN</li>
+              <li>www.enhygiene.com</li>
             </ul>
             <div className="mt-4">
               <Link href="/contact">
